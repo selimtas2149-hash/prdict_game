@@ -1,0 +1,44 @@
+
+print("you are welcome you are welcome to next game")
+print(" you have to predict the number that includes 3 numbers")
+print(" you have infinive rights")
+consent=input ("can we continue yes or no? ")
+if consent=='yes':
+    while True:
+        number=input("can you enter a number")
+        first=int(number[0])
+        second=int(number[1])
+        third=int(number[2])
+        number=int(number)
+        if number==143:
+            for i in range(3):
+                print("excelent")
+                print("👏")
+            break  
+        elif (first==1) and (second!=4) and (third!=3):
+            print("sorry, the first number only is correct")
+            print(" do not give up, you can try again")
+        elif (first!=1) and (second==4) and (third!=3):
+            print("sorry, the second number only is correct")
+            print(" do not forget that the real fail is to give up , you can try again")
+        elif (first!=1) and (second!=4) and (third==3):
+            print("sorry, the third number only is correct")
+            print(" you can not give up, ı believe you, you can deak with this number  , you can try again")
+        elif (first==1) and (second==4) and (third!=3):
+            print("sorry, the first number  and the second number only are correct")
+            print(" do not give up, you can try again")
+        elif (first==1) and (second!=4) and (third==3):
+            print("sorry, the first number  and the third number only are correct")
+            print(" you can achieve, you can try again")
+        elif (first!=1) and (second==4) and (third==3):
+            print("good job")
+            print("sorry, the first number is only wrong")
+            print("  you can try again")
+        else:
+            print("sorry, all of numbers are wrong ")
+            print("however, your oppurtunity did  not finish")
+            print("you can try again")
+elif consent=='no':  
+    print("next time, inşallah")
+else:
+    print("yes or no, bro")
